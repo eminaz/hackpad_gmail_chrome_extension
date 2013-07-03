@@ -12,7 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
   +' }); });';
 
   chrome.tabs.executeScript(null,{code:the_code},function(){
-    document.getElementById('front_text').innerHTML="Saved";
+    if(localStorage["client_id"] && localStorage["client_id"]!="" && localStorage["secret"] && localStorage["secret"]!=""){
+      document.getElementById('front_text').innerHTML="Saved";
+   }
+   else{
+      document.getElementById('front_text').innerHTML="Please edit your credentials first by clicking the options button of this extension";
+   }
   });
 
 });
