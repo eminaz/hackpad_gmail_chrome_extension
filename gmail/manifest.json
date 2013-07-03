@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "hackpad Gmail Extension",
-  "description": "This extension saves the gmail email on the current tab to a new pad in hackpad. Please click the options button below and type in your hackpad client_id and secret on the Options page",
+  "name": "Hackpad Gmail Extension",
+  "description": "Save email on the current tab to a new pad in hackpad. Click the options button below and type in your credentials",
   "version": "1.0",
 
   "browser_action": {
@@ -27,6 +27,5 @@
   ],
 
   "options_page": "options.html"
-
 
 }
